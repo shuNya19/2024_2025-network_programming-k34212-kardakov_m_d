@@ -21,3 +21,11 @@ Date of finished: 24.10.2024
 
 
 ### Ход работы
+
+#### 1. Установить второй CHR на своем ПК.
+  
+<img src="https://github.com/user-attachments/assets/ab73655a-b6e6-4bc6-ab9a-46e25a05a9b3" alt="Созданная виртуальная машина" width="600"/>  
+
+#### 2. Организовать второй OVPN Client на втором CHR.
+
+#### 3. Используя Ansible, настроить NTP, OSPF и данные нового пользователя сразу на 2-х CHR.
