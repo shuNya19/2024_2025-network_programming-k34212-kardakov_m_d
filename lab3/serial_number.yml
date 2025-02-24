@@ -1,0 +1,28 @@
+- name: Update serial number
+  hosts: ungrouped
+  connection: community.routeros.api
+  gather_facts: false
+
+  tasks:
+
+    - name: Get serial number
+      community.routeros.command:
+        commands:
+          - /system license print
+      register: serial
+
+    - name: Get name
+      community.routeros.command:
+        commands:
+          - /system identity print
+      register: ident
+
+    - name: Add Serial Number to Netbox
+      netbox_device:
+        netbox_url: http://109.68.214.95:8000
+        netbox_token: 0123456789abcdef0123456789abcdef01234567
+        data:
+          name: "{{ident.stdout_lines[0][0].split(' ').1}}"
+          serial: "{{serial.stdout_lines[0][0].split(' ').1}}"
+        state: present
+        validate_certs: False

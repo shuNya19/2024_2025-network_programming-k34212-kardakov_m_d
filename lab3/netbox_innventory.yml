@@ -1,0 +1,571 @@
+all:
+  vars:
+    ansible_user: admin
+    ansible_password: admin
+    ansible_connection: network_cli
+    ansible_network_os: routeros
+  children:
+    ungrouped:
+      hosts:
+        CHR1:
+          ansible_host: 10.1.1.2
+          config_context:
+          - {}
+          custom_fields: {}
+          device_roles:
+          - router
+          device_types:
+          - chr
+          interfaces:
+          - _occupied: false
+            bridge: null
+            cable: null
+            cable_end: null
+            connected_endpoints: null
+            connected_endpoints_reachable: null
+            connected_endpoints_type: null
+            count_fhrp_groups: 0
+            count_ipaddresses: 1
+            created: '2025-02-22T13:50:16.386293Z'
+            custom_fields: {}
+            description: ''
+            device:
+              description: ''
+              display: CHR1
+              id: 1
+              name: CHR1
+              url: http://109.68.214.95:8000/api/dcim/devices/1/
+            display: ether1
+            display_url: http://109.68.214.95:8000/dcim/interfaces/1/
+            duplex: null
+            enabled: true
+            id: 1
+            ip_addresses:
+            - address: 192.168.0.101/24
+              comments: ''
+              created: '2025-02-22T14:04:46.276945Z'
+              custom_fields: {}
+              description: ''
+              display: 192.168.0.101/24
+              display_url: http://109.68.214.95:8000/ipam/ip-addresses/1/
+              dns_name: ''
+              family:
+                label: IPv4
+                value: 4
+              id: 1
+              last_updated: '2025-02-22T14:04:46.277179Z'
+              nat_inside: null
+              nat_outside: []
+              role: null
+              status:
+                label: Active
+                value: active
+              tags: []
+              tenant: null
+              url: http://109.68.214.95:8000/api/ipam/ip-addresses/1/
+              vrf: null
+            l2vpn_termination: null
+            label: ''
+            lag: null
+            last_updated: '2025-02-22T13:50:16.386663Z'
+            link_peers: []
+            link_peers_type: null
+            mac_address: null
+            mac_addresses: []
+            mark_connected: false
+            mgmt_only: false
+            mode: null
+            module: null
+            mtu: null
+            name: ether1
+            parent: null
+            poe_mode: null
+            poe_type: null
+            primary_mac_address: null
+            qinq_svlan: null
+            rf_channel: null
+            rf_channel_frequency: null
+            rf_channel_width: null
+            rf_role: null
+            speed: null
+            tagged_vlans: []
+            tags: []
+            tx_power: null
+            type:
+              label: Bridge
+              value: bridge
+            untagged_vlan: null
+            url: http://109.68.214.95:8000/api/dcim/interfaces/1/
+            vdcs: []
+            vlan_translation_policy: null
+            vrf: null
+            wireless_lans: []
+            wireless_link: null
+            wwn: null
+          - _occupied: false
+            bridge: null
+            cable: null
+            cable_end: null
+            connected_endpoints: null
+            connected_endpoints_reachable: null
+            connected_endpoints_type: null
+            count_fhrp_groups: 0
+            count_ipaddresses: 1
+            created: '2025-02-22T14:03:39.457557Z'
+            custom_fields: {}
+            description: ''
+            device:
+              description: ''
+              display: CHR1
+              id: 1
+              name: CHR1
+              url: http://109.68.214.95:8000/api/dcim/devices/1/
+            display: lo
+            display_url: http://109.68.214.95:8000/dcim/interfaces/3/
+            duplex: null
+            enabled: true
+            id: 3
+            ip_addresses:
+            - address: 1.1.1.1/32
+              comments: ''
+              created: '2025-02-22T14:27:25.274442Z'
+              custom_fields: {}
+              description: ''
+              display: 1.1.1.1/32
+              display_url: http://109.68.214.95:8000/ipam/ip-addresses/2/
+              dns_name: ''
+              family:
+                label: IPv4
+                value: 4
+              id: 2
+              last_updated: '2025-02-22T14:27:25.274465Z'
+              nat_inside: null
+              nat_outside: []
+              role: null
+              status:
+                label: Active
+                value: active
+              tags: []
+              tenant: null
+              url: http://109.68.214.95:8000/api/ipam/ip-addresses/2/
+              vrf: null
+            l2vpn_termination: null
+            label: ''
+            lag: null
+            last_updated: '2025-02-22T14:03:39.457579Z'
+            link_peers: []
+            link_peers_type: null
+            mac_address: null
+            mac_addresses: []
+            mark_connected: false
+            mgmt_only: false
+            mode: null
+            module: null
+            mtu: null
+            name: lo
+            parent: null
+            poe_mode: null
+            poe_type: null
+            primary_mac_address: null
+            qinq_svlan: null
+            rf_channel: null
+            rf_channel_frequency: null
+            rf_channel_width: null
+            rf_role: null
+            speed: null
+            tagged_vlans: []
+            tags: []
+            tx_power: null
+            type:
+              label: Virtual
+              value: virtual
+            untagged_vlan: null
+            url: http://109.68.214.95:8000/api/dcim/interfaces/3/
+            vdcs: []
+            vlan_translation_policy: null
+            vrf: null
+            wireless_lans: []
+            wireless_link: null
+            wwn: null
+          - _occupied: false
+            bridge: null
+            cable: null
+            cable_end: null
+            connected_endpoints: null
+            connected_endpoints_reachable: null
+            connected_endpoints_type: null
+            count_fhrp_groups: 0
+            count_ipaddresses: 1
+            created: '2025-02-22T14:02:22.807381Z'
+            custom_fields: {}
+            description: ''
+            device:
+              description: ''
+              display: CHR1
+              id: 1
+              name: CHR1
+              url: http://109.68.214.95:8000/api/dcim/devices/1/
+            display: wireguard
+            display_url: http://109.68.214.95:8000/dcim/interfaces/2/
+            duplex: null
+            enabled: true
+            id: 2
+            ip_addresses:
+            - address: 10.1.1.2/24
+              comments: ''
+              created: '2025-02-22T14:27:44.526407Z'
+              custom_fields: {}
+              description: ''
+              display: 10.1.1.2/24
+              display_url: http://109.68.214.95:8000/ipam/ip-addresses/3/
+              dns_name: ''
+              family:
+                label: IPv4
+                value: 4
+              id: 3
+              last_updated: '2025-02-22T14:27:44.526432Z'
+              nat_inside: null
+              nat_outside: []
+              role: null
+              status:
+                label: Active
+                value: active
+              tags: []
+              tenant: null
+              url: http://109.68.214.95:8000/api/ipam/ip-addresses/3/
+              vrf: null
+            l2vpn_termination: null
+            label: ''
+            lag: null
+            last_updated: '2025-02-22T14:02:22.807612Z'
+            link_peers: []
+            link_peers_type: null
+            mac_address: null
+            mac_addresses: []
+            mark_connected: false
+            mgmt_only: false
+            mode: null
+            module: null
+            mtu: null
+            name: wireguard
+            parent: null
+            poe_mode: null
+            poe_type: null
+            primary_mac_address: null
+            qinq_svlan: null
+            rf_channel: null
+            rf_channel_frequency: null
+            rf_channel_width: null
+            rf_role: null
+            speed: null
+            tagged_vlans: []
+            tags: []
+            tx_power: null
+            type:
+              label: Virtual
+              value: virtual
+            untagged_vlan: null
+            url: http://109.68.214.95:8000/api/dcim/interfaces/2/
+            vdcs: []
+            vlan_translation_policy: null
+            vrf: null
+            wireless_lans: []
+            wireless_link: null
+            wwn: null
+          is_virtual: false
+          local_context_data:
+          - null
+          locations: []
+          manufacturers:
+          - mikrotik
+          regions: []
+          serial: ''
+          services: []
+          site_groups: []
+          sites:
+          - ether1
+          status:
+            label: Active
+            value: active
+          tags: []
+        CHR2:
+          ansible_host: 10.1.1.3
+          config_context:
+          - {}
+          custom_fields: {}
+          device_roles:
+          - router
+          device_types:
+          - chr
+          interfaces:
+          - _occupied: false
+            bridge: null
+            cable: null
+            cable_end: null
+            connected_endpoints: null
+            connected_endpoints_reachable: null
+            connected_endpoints_type: null
+            count_fhrp_groups: 0
+            count_ipaddresses: 1
+            created: '2025-02-22T15:07:00.116252Z'
+            custom_fields: {}
+            description: ''
+            device:
+              description: ''
+              display: CHR2
+              id: 2
+              name: CHR2
+              url: http://109.68.214.95:8000/api/dcim/devices/2/
+            display: ether1
+            display_url: http://109.68.214.95:8000/dcim/interfaces/4/
+            duplex: null
+            enabled: true
+            id: 4
+            ip_addresses:
+            - address: 192.168.0.106/24
+              comments: ''
+              created: '2025-02-22T15:07:41.162938Z'
+              custom_fields: {}
+              description: ''
+              display: 192.168.0.106/24
+              display_url: http://109.68.214.95:8000/ipam/ip-addresses/4/
+              dns_name: ''
+              family:
+                label: IPv4
+                value: 4
+              id: 4
+              last_updated: '2025-02-22T15:07:41.162958Z'
+              nat_inside: null
+              nat_outside: []
+              role: null
+              status:
+                label: Active
+                value: active
+              tags: []
+              tenant: null
+              url: http://109.68.214.95:8000/api/ipam/ip-addresses/4/
+              vrf: null
+            l2vpn_termination: null
+            label: ''
+            lag: null
+            last_updated: '2025-02-22T15:07:00.116282Z'
+            link_peers: []
+            link_peers_type: null
+            mac_address: null
+            mac_addresses: []
+            mark_connected: false
+            mgmt_only: false
+            mode: null
+            module: null
+            mtu: null
+            name: ether1
+            parent: null
+            poe_mode: null
+            poe_type: null
+            primary_mac_address: null
+            qinq_svlan: null
+            rf_channel: null
+            rf_channel_frequency: null
+            rf_channel_width: null
+            rf_role: null
+            speed: null
+            tagged_vlans: []
+            tags: []
+            tx_power: null
+            type:
+              label: Bridge
+              value: bridge
+            untagged_vlan: null
+            url: http://109.68.214.95:8000/api/dcim/interfaces/4/
+            vdcs: []
+            vlan_translation_policy: null
+            vrf: null
+            wireless_lans: []
+            wireless_link: null
+            wwn: null
+          - _occupied: false
+            bridge: null
+            cable: null
+            cable_end: null
+            connected_endpoints: null
+            connected_endpoints_reachable: null
+            connected_endpoints_type: null
+            count_fhrp_groups: 0
+            count_ipaddresses: 1
+            created: '2025-02-22T15:09:06.146468Z'
+            custom_fields: {}
+            description: ''
+            device:
+              description: ''
+              display: CHR2
+              id: 2
+              name: CHR2
+              url: http://109.68.214.95:8000/api/dcim/devices/2/
+            display: lo
+            display_url: http://109.68.214.95:8000/dcim/interfaces/6/
+            duplex: null
+            enabled: true
+            id: 6
+            ip_addresses:
+            - address: 2.2.2.2/32
+              comments: ''
+              created: '2025-02-22T15:15:47.842386Z'
+              custom_fields: {}
+              description: ''
+              display: 2.2.2.2/32
+              display_url: http://109.68.214.95:8000/ipam/ip-addresses/6/
+              dns_name: ''
+              family:
+                label: IPv4
+                value: 4
+              id: 6
+              last_updated: '2025-02-22T15:15:47.842412Z'
+              nat_inside: null
+              nat_outside: []
+              role: null
+              status:
+                label: Active
+                value: active
+              tags: []
+              tenant: null
+              url: http://109.68.214.95:8000/api/ipam/ip-addresses/6/
+              vrf: null
+            l2vpn_termination: null
+            label: ''
+            lag: null
+            last_updated: '2025-02-22T15:09:06.146490Z'
+            link_peers: []
+            link_peers_type: null
+            mac_address: null
+            mac_addresses: []
+            mark_connected: false
+            mgmt_only: false
+            mode: null
+            module: null
+            mtu: null
+            name: lo
+            parent: null
+            poe_mode: null
+            poe_type: null
+            primary_mac_address: null
+            qinq_svlan: null
+            rf_channel: null
+            rf_channel_frequency: null
+            rf_channel_width: null
+            rf_role: null
+            speed: null
+            tagged_vlans: []
+            tags: []
+            tx_power: null
+            type:
+              label: Virtual
+              value: virtual
+            untagged_vlan: null
+            url: http://109.68.214.95:8000/api/dcim/interfaces/6/
+            vdcs: []
+            vlan_translation_policy: null
+            vrf: null
+            wireless_lans: []
+            wireless_link: null
+            wwn: null
+          - _occupied: false
+            bridge: null
+            cable: null
+            cable_end: null
+            connected_endpoints: null
+            connected_endpoints_reachable: null
+            connected_endpoints_type: null
+            count_fhrp_groups: 0
+            count_ipaddresses: 1
+            created: '2025-02-22T15:08:07.448229Z'
+            custom_fields: {}
+            description: ''
+            device:
+              description: ''
+              display: CHR2
+              id: 2
+              name: CHR2
+              url: http://109.68.214.95:8000/api/dcim/devices/2/
+            display: wireguard1
+            display_url: http://109.68.214.95:8000/dcim/interfaces/5/
+            duplex: null
+            enabled: true
+            id: 5
+            ip_addresses:
+            - address: 10.1.1.3/24
+              comments: ''
+              created: '2025-02-22T15:08:32.229366Z'
+              custom_fields: {}
+              description: ''
+              display: 10.1.1.3/24
+              display_url: http://109.68.214.95:8000/ipam/ip-addresses/5/
+              dns_name: ''
+              family:
+                label: IPv4
+                value: 4
+              id: 5
+              last_updated: '2025-02-22T15:08:32.229396Z'
+              nat_inside: null
+              nat_outside: []
+              role: null
+              status:
+                label: Active
+                value: active
+              tags: []
+              tenant: null
+              url: http://109.68.214.95:8000/api/ipam/ip-addresses/5/
+              vrf: null
+            l2vpn_termination: null
+            label: ''
+            lag: null
+            last_updated: '2025-02-22T15:08:07.448255Z'
+            link_peers: []
+            link_peers_type: null
+            mac_address: null
+            mac_addresses: []
+            mark_connected: false
+            mgmt_only: false
+            mode: null
+            module: null
+            mtu: null
+            name: wireguard1
+            parent: null
+            poe_mode: null
+            poe_type: null
+            primary_mac_address: null
+            qinq_svlan: null
+            rf_channel: null
+            rf_channel_frequency: null
+            rf_channel_width: null
+            rf_role: null
+            speed: null
+            tagged_vlans: []
+            tags: []
+            tx_power: null
+            type:
+              label: Virtual
+              value: virtual
+            untagged_vlan: null
+            url: http://109.68.214.95:8000/api/dcim/interfaces/5/
+            vdcs: []
+            vlan_translation_policy: null
+            vrf: null
+            wireless_lans: []
+            wireless_link: null
+            wwn: null
+          is_virtual: false
+          local_context_data:
+          - null
+          locations: []
+          manufacturers:
+          - mikrotik
+          regions: []
+          serial: ''
+          services: []
+          site_groups: []
+          sites:
+          - ether1
+          status:
+            label: Active
+            value: active
+          tags: []

@@ -1,0 +1,17 @@
+- name: Change name and IP
+  hosts: ungrouped
+  vars:
+    ansible_network_cli_ssh_type: libssh
+  gather_facts: false
+  connection: community.routeros.api
+  tasks:
+    - name: Change name
+      community.routeros.command:
+        commands:
+          - /system identity set name="{{ interfaces[0].device.name }}"
+
+    - name: Change IP
+      community.routeros.command:
+        commands:
+          - /interface bridge add name="{{ interfaces[0].display }}"
+          - /ip address add address="{{ interfaces[0].ip_addresses[0].address }}" interface="{{ interfaces[0].display }}"
