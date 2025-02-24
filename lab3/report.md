@@ -6,7 +6,7 @@ Group: K34212
 Author: Kardakov Maxim Dmitrievich  
 Lab: Lab3  
 Date of create: 15.12.2024  
-Date of finished: .12.2024 
+Date of finished: 24.02.2025 
 
 ## Отчёт о Лабораторной работе №3 <br>"Развертывание Netbox, сеть связи как источник правды в системе технического учета Netbox"
 
